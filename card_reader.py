@@ -3,7 +3,7 @@ import os
 
 def get_card():
     for sd_path in ascii_uppercase:
-        if os.path.exists('%s:\\Fuji.ID' % SVPATH):
+        if os.path.exists('%s:\\Fuji.ID' % sd_path):
             sd_path='%s:\\' % sd_path
             print('SD card mounted to ', sd_path)
             return sd_path + ""
